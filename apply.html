@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apply | Brightpath Ascend Capital Funding</title>
+  <meta name="description" content="Apply for funding in 5 minutes. See your options within 24 hours.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body class="grain">
+
+  <!-- Navigation -->
+  <header class="nav-header" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="assets/images/BAG-A.png" alt="Brightpath Ascend Capital Funding">
+      </a>
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="funding.html" class="nav-link">Funding Options</a>
+        <a href="faq.html" class="nav-link">FAQ</a>
+        <a href="apply.html" class="nav-link active">Apply</a>
+      </nav>
+      <a href="apply.html" class="btn btn-ghost btn-sm nav-cta">Apply Now</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="nav-mobile" id="navMobile">
+    <a href="index.html" class="nav-mobile-link">Home</a>
+    <a href="funding.html" class="nav-mobile-link">Funding Options</a>
+    <a href="faq.html" class="nav-mobile-link">FAQ</a>
+    <a href="apply.html" class="nav-mobile-link">Apply</a>
+  </div>
+
+  <main>
+    <!-- Page Hero -->
+    <section class="page-hero" style="padding-top: var(--space-48);">
+      <div class="container">
+        <p class="text-micro reveal" style="margin-bottom: var(--space-4);">Apply</p>
+        <h1 class="page-hero-title reveal">5 minutes.</h1>
+        <p class="page-hero-subtitle reveal">Options within 24 hours.</p>
+      </div>
+    </section>
+
+    <!-- Application Section -->
+    <section class="contact-section">
+      <div class="container">
+        <div class="contact-grid">
+          <!-- Form -->
+          <div class="contact-form-wrapper reveal">
+            <h2 class="contact-form-title">Funding Application</h2>
+            <p class="contact-form-subtitle">Tell us what you're looking for.</p>
+
+            <form class="contact-form" id="applyForm">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="firstName" class="form-label">First Name</label>
+                  <input type="text" id="firstName" name="firstName" class="form-input" required>
+                </div>
+                <div class="form-group">
+                  <label for="lastName" class="form-label">Last Name</label>
+                  <input type="text" id="lastName" name="lastName" class="form-input" required>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" id="email" name="email" class="form-input" required>
+                </div>
+                <div class="form-group">
+                  <label for="phone" class="form-label">Phone</label>
+                  <input type="tel" id="phone" name="phone" class="form-input" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="fundingType" class="form-label">Funding Type</label>
+                <select id="fundingType" name="fundingType" class="form-input">
+                  <option value="">Select</option>
+                  <option value="personal">Personal Funding (No business)</option>
+                  <option value="business">Business Funding</option>
+                  <option value="both">Both Personal & Business</option>
+                  <option value="not-sure">Not Sure</option>
+                </select>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="amount" class="form-label">Amount Needed</label>
+                  <select id="amount" name="amount" class="form-input">
+                    <option value="">Select</option>
+                    <option value="10-25k">$10K - $25K</option>
+                    <option value="25-50k">$25K - $50K</option>
+                    <option value="50-100k">$50K - $100K</option>
+                    <option value="100-250k">$100K - $250K</option>
+                    <option value="250k+">$250K+</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="creditScore" class="form-label">Estimated Credit Score</label>
+                  <select id="creditScore" name="creditScore" class="form-input">
+                    <option value="">Select</option>
+                    <option value="750+">750+</option>
+                    <option value="700-749">700-749</option>
+                    <option value="650-699">650-699</option>
+                    <option value="600-649">600-649</option>
+                    <option value="below-600">Below 600</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="purpose" class="form-label">What will you use the funds for?</label>
+                <textarea id="purpose" name="purpose" class="form-textarea" placeholder="Business expansion, equipment, working capital, debt consolidation, etc."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-accent btn-lg" style="width: 100%;">
+                Submit Application <span class="arrow">&rarr;</span>
+              </button>
+            </form>
+          </div>
+
+          <!-- Info -->
+          <div class="contact-info reveal">
+            <h3 class="contact-info-title">What happens next</h3>
+
+            <div style="display: flex; gap: var(--space-4); margin-bottom: var(--space-8);">
+              <div style="width: 40px; height: 40px; border: 1px solid var(--color-accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: var(--text-base); color: var(--color-accent); flex-shrink: 0;">1</div>
+              <div>
+                <h4 style="font-size: var(--text-lg); font-weight: var(--weight-medium); margin-bottom: var(--space-2);">We review</h4>
+                <p style="font-size: var(--text-sm); color: var(--color-text-muted);">Your application is reviewed within 24 hours.</p>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: var(--space-4); margin-bottom: var(--space-8);">
+              <div style="width: 40px; height: 40px; border: 1px solid var(--color-accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: var(--text-base); color: var(--color-accent); flex-shrink: 0;">2</div>
+              <div>
+                <h4 style="font-size: var(--text-lg); font-weight: var(--weight-medium); margin-bottom: var(--space-2);">We call</h4>
+                <p style="font-size: var(--text-sm); color: var(--color-text-muted);">Quick call to discuss your options and answer questions.</p>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: var(--space-4); margin-bottom: var(--space-8);">
+              <div style="width: 40px; height: 40px; border: 1px solid var(--color-accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: var(--text-base); color: var(--color-accent); flex-shrink: 0;">3</div>
+              <div>
+                <h4 style="font-size: var(--text-lg); font-weight: var(--weight-medium); margin-bottom: var(--space-2);">You choose</h4>
+                <p style="font-size: var(--text-sm); color: var(--color-text-muted);">Select the funding option that works best for you.</p>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: var(--space-4);">
+              <div style="width: 40px; height: 40px; border: 1px solid var(--color-accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: var(--text-base); color: var(--color-accent); flex-shrink: 0;">4</div>
+              <div>
+                <h4 style="font-size: var(--text-lg); font-weight: var(--weight-medium); margin-bottom: var(--space-2);">Get funded</h4>
+                <p style="font-size: var(--text-sm); color: var(--color-text-muted);">Capital deposited. Use it for anything.</p>
+              </div>
+            </div>
+
+            <div style="margin-top: var(--space-12); padding-top: var(--space-8); border-top: 1px solid var(--color-border);">
+              <h4 class="contact-info-title" style="font-size: var(--text-lg);">Direct Contact</h4>
+
+              <div class="contact-method">
+                <p class="contact-method-label">Phone</p>
+                <p class="contact-method-value"><a href="tel:9179094051">(917) 909-4051</a></p>
+              </div>
+
+              <div class="contact-method">
+                <p class="contact-method-label">Email</p>
+                <p class="contact-method-value"><a href="mailto:capital@brightpathascendgroup.com">capital@brightpathascendgroup.com</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/images/BAG-Deloiite.png" alt="Brightpath Ascend Capital Funding" class="footer-logo">
+          <p class="footer-tagline">Capital. Your Way.</p>
+          <p class="footer-desc">A Brightpath Ascend Group Company</p>
+        </div>
+        <div>
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="funding.html">Funding Options</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="apply.html">Apply</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Contact</h4>
+          <ul class="footer-links">
+            <li><a href="tel:9179094051">(917) 909-4051</a></li>
+            <li><a href="mailto:capital@brightpathascendgroup.com">capital@brightpathascendgroup.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-legal">&copy; 2025 Brightpath Ascend Capital Funding. Not a direct lender. We connect businesses with funding sources. Loan approval, amounts, and terms are determined by lenders based on creditworthiness. Results vary. No guarantees.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
